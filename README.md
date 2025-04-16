@@ -118,6 +118,8 @@ The approach assumes clean and correctly aligned table structures; irregularitie
 
 Logging and exception handling mechanisms are limited in the current version. 
 
+For real data, Client logging information will be encrypted.
+
 Conclusion and Recommendations 
 
 This script demonstrates an effective and modular approach to structured data extraction from OCR-processed invoices in a production-like environment. It is well-suited for integration into downstream automation systems requiring structured metadata and financial data. Future iterations could benefit from: 
