@@ -164,9 +164,6 @@ def extract_invoice_data(ocr_text):
     match = re.search(r"Invoice No\.\s*(?:\d{2}/\d{2}/\d{2}\s+){2}(\d+)", ocr_text)
     result["invoice number"] = match.group(1) if match else None
     #Now invoice date
-    #match = re.search(r"(\d{2}/\d{2}/\d{2})\s+\d{2}/\d{2}/\d{2}\s+(\d{9})", ocr_text)
-    #result["date"] = match.group(1) if match else None
-
     # Use a regex to find the date in MM/DD/YY format
     match = re.search(r"\b(\d{2}/\d{2}/\d{2})\b", ocr_text)
     if match:
